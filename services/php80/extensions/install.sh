@@ -523,7 +523,7 @@ if [[ -z "${EXTENSIONS##*,amqp,*}" ]]; then
     && printf '\n' | pecl install amqp \
     && docker-php-ext-enable amqp \
     && apk del .phpize-deps-configure
-    
+
 fi
 
 if [[ -z "${EXTENSIONS##*,redis,*}" ]]; then
@@ -586,7 +586,7 @@ fi
 
 if [[ -z "${EXTENSIONS##*,swoole,*}" ]]; then
     echo "---------- Install swoole ----------"
-    pecl install swoole
+    pecl install -D 'enable-openssl="yes" enable-http2="yes"' swoole
     docker-php-ext-enable swoole
 fi
 
