@@ -348,3 +348,13 @@ ini_set('display_errors', 'on');
 
 
 
+### 5.3 其他注意事项
+1.容器内网络dns解析失败RUN echo "nameserver 宿主机DNS服务器的IP地址" >> /etc/resolv.conf
+2.宿主机与虚拟机网络不通 systemctl stop  firewalld.service
+3. 虚拟机文件挂载无效  
+```bash
+apt-get install open-vm-tools
+vmhgfs-fuse .host:/ /mnt/hgfs
+```
+
+
