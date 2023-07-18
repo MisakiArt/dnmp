@@ -515,7 +515,7 @@ if [[ -z "${EXTENSIONS##*,redis,*}" ]]; then
     echo "---------- Install redis ----------"
     isPhpVersionGreaterOrEqual 7 0
     if [[ "$?" = "1" ]]; then
-        installExtensionFromTgz redis-5.3.7
+        installExtensionFromTgz redis-4.3.0
     else
         printf "\n" | pecl install redis-4.3.0
         docker-php-ext-enable redis
