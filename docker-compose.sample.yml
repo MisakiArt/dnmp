@@ -44,7 +44,7 @@ services:
       - ${PHP_FPM_CONF_FILE}:/usr/local/etc/php-fpm.d/www.conf:rw
       - ${PHP_LOG_DIR}:/var/log/php
       - ${DATA_DIR}/composer:/tmp/composer
-    #      - ${GIT_DIR}/.ssh:/root/.ssh
+      - ${GIT_DIR}/.ssh:/root/.ssh
     restart: always
     cap_add:
       - SYS_PTRACE
@@ -71,61 +71,62 @@ services:
       - ${PHP80_FPM_CONF_FILE}:/usr/local/etc/php-fpm.d/www.conf:rw
       - ${PHP80_LOG_DIR}:/var/log/php
       - ${DATA_DIR}/composer:/tmp/composer
-    #      - ${GIT_DIR}/.ssh:/root/.ssh
+      - ${GIT_DIR}/.ssh:/root/.ssh
     restart: always
     cap_add:
       - SYS_PTRACE
     networks:
       - default
 
-#  php-redis4:
-#    build:
-#      context: ./services/php-redis4
-#      args:
-#        PHP_VERSION: php:${PHP_VERSION}-fpm-alpine
-#        CONTAINER_PACKAGE_URL: ${CONTAINER_PACKAGE_URL}
-#        PHP_EXTENSIONS: ${PHP_EXTENSIONS}
-#        TZ: "$TZ"
-#    container_name: php-redis4
-#    expose:
-#      - 9503
-#    extra_hosts:
-#      - "www.site1.com:172.17.0.1"
-#    volumes:
-#      - ${SOURCE_DIR}:/www/:rw
-#      - ${PHP_PHP_CONF_FILE}:/usr/local/etc/php/php.ini:ro
-#      - ${PHP_FPM_CONF_FILE}:/usr/local/etc/php-fpm.d/www.conf:rw
-#      - ${PHP_LOG_DIR}:/var/log/php
-#      - ${DATA_DIR}/composer:/tmp/composer
-#    #      - ${GIT_DIR}/.ssh:/root/.ssh
-#    restart: always
-#    cap_add:
-#      - SYS_PTRACE
-#    networks:
-#      - default
+  #  php-redis4:
+  #    build:
+  #      context: ./services/php-redis4
+  #      args:
+  #        PHP_VERSION: php:${PHP_VERSION}-fpm-alpine
+  #        CONTAINER_PACKAGE_URL: ${CONTAINER_PACKAGE_URL}
+  #        PHP_EXTENSIONS: ${PHP_EXTENSIONS}
+  #        TZ: "$TZ"
+  #    container_name: php-redis4
+  #    expose:
+  #      - 9503
+  #    extra_hosts:
+  #      - "www.site1.com:172.17.0.1"
+  #    volumes:
+  #      - ${SOURCE_DIR}:/www/:rw
+  #      - ${PHP_PHP_CONF_FILE}:/usr/local/etc/php/php.ini:ro
+  #      - ${PHP_FPM_CONF_FILE}:/usr/local/etc/php-fpm.d/www.conf:rw
+  #      - ${PHP_LOG_DIR}:/var/log/php
+  #      - ${DATA_DIR}/composer:/tmp/composer
+  #    #      - ${GIT_DIR}/.ssh:/root/.ssh
+  #    restart: always
+  #    cap_add:
+  #      - SYS_PTRACE
+  #    networks:
+  #      - default
 
-#  php56:
-#    build:
-#      context: ./services/php
-#      args:
-#        PHP_VERSION: php:${PHP56_VERSION}-fpm-alpine
-#        CONTAINER_PACKAGE_URL: ${CONTAINER_PACKAGE_URL}
-#        PHP_EXTENSIONS: ${PHP56_EXTENSIONS}
-#        TZ: "$TZ"
-#    container_name: php56
-#    expose:
-#      - 9501
-#    volumes:
-#      - ${SOURCE_DIR}:/www/:rw
-#      - ${PHP56_PHP_CONF_FILE}:/usr/local/etc/php/php.ini:ro
-#      - ${PHP56_FPM_CONF_FILE}:/usr/local/etc/php-fpm.d/www.conf:rw
-#      - ${PHP56_LOG_DIR}:/var/log/php
-#      - ${DATA_DIR}/composer:/tmp/composer
-#    restart: always
-#    cap_add:
-#      - SYS_PTRACE
-#    networks:
-#      - default
+  php56:
+    build:
+      context: ./services/php56
+      args:
+        PHP_VERSION: php:${PHP56_VERSION}-fpm-alpine
+        CONTAINER_PACKAGE_URL: ${CONTAINER_PACKAGE_URL}
+        PHP_EXTENSIONS: ${PHP56_EXTENSIONS}
+        TZ: "$TZ"
+    container_name: php56
+    expose:
+      - 9501
+    volumes:
+      - ${SOURCE_DIR}:/www/:rw
+      - ${PHP56_PHP_CONF_FILE}:/usr/local/etc/php/php.ini:ro
+      - ${PHP56_FPM_CONF_FILE}:/usr/local/etc/php-fpm.d/www.conf:rw
+      - ${PHP56_LOG_DIR}:/var/log/php
+      - ${DATA_DIR}/composer:/tmp/composer
+      - ${GIT_DIR}/.ssh:/root/.ssh
+    restart: always
+    cap_add:
+      - SYS_PTRACE
+    networks:
+      - default
 
 
 #  mysql5:
