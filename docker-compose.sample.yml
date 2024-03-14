@@ -34,6 +34,7 @@ services:
         PHP_EXTENSIONS: ${PHP_EXTENSIONS}
         TZ: "$TZ"
     container_name: php
+    privileged: true
     expose:
       - 9501
     extra_hosts:
