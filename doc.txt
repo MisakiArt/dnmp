@@ -1,0 +1,44 @@
+find命令：
+find  ./ -type f -name "*.conf" | xargs grep "fastcgo_pass"
+
+
+
+k8s:
+docker build -t my-php-app:latest . //构建镜像
+
+
+
+kubectl get pods -o wide     //查看 Pod 状态
+kubectl logs <pod_name> --all-containers     //查看容器日志
+kubectl describe pod <pod_name>  查看 Pod 详细描述
+
+
+
+kubectl logs -n ingress-nginx -l app.kubernetes.io/name=ingress-nginx --tail=100 -f   //ingress的访问日志
+
+
+kubectl apply -f ingress.yaml   //修改ingress文件后重新应用
+
+ kubectl describe ingress {php-ingress} -n compassedu //查看ingress详情
+
+ kubectl apply -f configmap.yaml  //修改构建文件后重新应用
+kubectl set image deployment/api-compassedu php-api-compassedu=api-compassedu:202502111416 --namespace=compassedu
+
+
+
+ kubectl rollout restart deployment <deployment_name> -n compassedu   //重启服务
+
+
+//模拟内存cpu高负载
+kubectl exec -it <pod-name> -- stress --cpu 2 --timeout 60s
+kubectl exec -it <pod-name> -- stress --vm 2 --vm-bytes 500M --timeout 60s
+
+
+//wrk 压测
+wrk -t10 -c100 -d30s http://127.0.0.1:9080/index.php/api/about/test
+//每两秒刷新一次top
+watch -n 2 kubectl top pod -n <namespace> <pod-name>
+
+
+ps aux | grep 'about/test/start' | awk '{print $2}' | xargs kill -9
+

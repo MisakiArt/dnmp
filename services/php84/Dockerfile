@@ -1,5 +1,5 @@
 ARG PHP_VERSION
-FROM php:8.2-fpm
+FROM phpswoole/swoole:6.0.1-php8.4-zts
 
 ARG TZ
 ARG PHP_EXTENSIONS
@@ -20,8 +20,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install PHP extensions
 RUN curl -sSLf -o /usr/local/bin/install-php-extensions https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions \
-&& chmod +x /usr/local/bin/install-php-extensions \
-&& install-php-extensions $PHP_EXTENSIONS
+&& chmod +x /usr/local/bin/install-php-extensions
 
 # Install composer and change it's cache home
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
