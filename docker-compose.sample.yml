@@ -129,7 +129,30 @@ services:
     networks:
       - default
 
-
+  php84:
+    build:
+      context: ./services/php84
+      args:
+        DEBIAN_MIRROR_DOMAIN: deb.debian.org
+        PHP_EXTENSIONS: "$PHP84_EXTENSIONS"
+        TZ: "$TZ"
+    container_name: php84
+    expose:
+      - 9501
+    ports:
+      - "${PHP84_HTTP_HOST_PORT}:9501"
+      - "${PHP84_HTTP_HOST_PORT2}:9502"
+    volumes:
+      - ${SOURCE_DIR}:/www/:rw
+      - ${PHP84_PHP_CONF_FILE}:/usr/local/etc/php/php.ini
+      - ${PHP84_LOG_DIR}:/var/log/php
+      - ${PHP84_DATA_COMPOSER}:/tmp/composer
+      - ${GIT_DIR}/.ssh:/root/.ssh
+    restart: always
+    cap_add:
+      - SYS_PTRACE
+    networks:
+      - default
 #  mysql5:
 #    image: mysql:${MYSQL5_VERSION}
 #    container_name: mysql5

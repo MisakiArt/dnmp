@@ -42,3 +42,6 @@ watch -n 2 kubectl top pod -n <namespace> <pod-name>
 
 ps aux | grep 'about/test/start' | awk '{print $2}' | xargs kill -9
 
+
+强制重启docker-compose
+docker-compose up -d --force-recreate api-hyperf-compassedu

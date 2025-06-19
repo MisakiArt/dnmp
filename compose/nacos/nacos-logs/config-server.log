@@ -1,0 +1,186 @@
+2025-04-07 17:39:36,034 INFO notifyConnectTimeout:100
+
+2025-04-07 17:39:36,038 INFO notifySocketTimeout:200
+
+2025-04-07 17:39:36,039 INFO isHealthCheck:true
+
+2025-04-07 17:39:36,039 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:39:36,039 INFO maxContent:10485760
+
+2025-04-07 17:39:41,601 INFO notifyConnectTimeout:100
+
+2025-04-07 17:39:41,604 INFO notifySocketTimeout:200
+
+2025-04-07 17:39:41,604 INFO isHealthCheck:true
+
+2025-04-07 17:39:41,604 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:39:41,604 INFO maxContent:10485760
+
+2025-04-07 17:39:47,574 INFO notifyConnectTimeout:100
+
+2025-04-07 17:39:47,577 INFO notifySocketTimeout:200
+
+2025-04-07 17:39:47,577 INFO isHealthCheck:true
+
+2025-04-07 17:39:47,578 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:39:47,578 INFO maxContent:10485760
+
+2025-04-07 17:39:53,309 INFO notifyConnectTimeout:100
+
+2025-04-07 17:39:53,312 INFO notifySocketTimeout:200
+
+2025-04-07 17:39:53,312 INFO isHealthCheck:true
+
+2025-04-07 17:39:53,312 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:39:53,312 INFO maxContent:10485760
+
+2025-04-07 17:39:59,490 INFO notifyConnectTimeout:100
+
+2025-04-07 17:39:59,493 INFO notifySocketTimeout:200
+
+2025-04-07 17:39:59,493 INFO isHealthCheck:true
+
+2025-04-07 17:39:59,494 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:39:59,494 INFO maxContent:10485760
+
+2025-04-07 17:40:06,726 INFO notifyConnectTimeout:100
+
+2025-04-07 17:40:06,729 INFO notifySocketTimeout:200
+
+2025-04-07 17:40:06,730 INFO isHealthCheck:true
+
+2025-04-07 17:40:06,730 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:40:06,730 INFO maxContent:10485760
+
+2025-04-07 17:40:14,990 INFO notifyConnectTimeout:100
+
+2025-04-07 17:40:14,992 INFO notifySocketTimeout:200
+
+2025-04-07 17:40:14,993 INFO isHealthCheck:true
+
+2025-04-07 17:40:14,993 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:40:14,993 INFO maxContent:10485760
+
+2025-04-07 17:40:26,496 INFO notifyConnectTimeout:100
+
+2025-04-07 17:40:26,497 INFO notifySocketTimeout:200
+
+2025-04-07 17:40:26,497 INFO isHealthCheck:true
+
+2025-04-07 17:40:26,498 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:40:26,498 INFO maxContent:10485760
+
+2025-04-07 17:40:44,304 INFO notifyConnectTimeout:100
+
+2025-04-07 17:40:44,305 INFO notifySocketTimeout:200
+
+2025-04-07 17:40:44,305 INFO isHealthCheck:true
+
+2025-04-07 17:40:44,305 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:40:44,306 INFO maxContent:10485760
+
+2025-04-07 17:41:13,841 INFO notifyConnectTimeout:100
+
+2025-04-07 17:41:13,843 INFO notifySocketTimeout:200
+
+2025-04-07 17:41:13,843 INFO isHealthCheck:true
+
+2025-04-07 17:41:13,843 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:41:13,843 INFO maxContent:10485760
+
+2025-04-07 17:46:05,333 INFO notifyConnectTimeout:100
+
+2025-04-07 17:46:05,335 INFO notifySocketTimeout:200
+
+2025-04-07 17:46:05,335 INFO isHealthCheck:true
+
+2025-04-07 17:46:05,335 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:46:05,335 INFO maxContent:10485760
+
+2025-04-07 17:46:09,567 INFO notifyConnectTimeout:100
+
+2025-04-07 17:46:09,569 INFO notifySocketTimeout:200
+
+2025-04-07 17:46:09,569 INFO isHealthCheck:true
+
+2025-04-07 17:46:09,569 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:46:09,569 INFO maxContent:10485760
+
+2025-04-07 17:46:13,701 INFO notifyConnectTimeout:100
+
+2025-04-07 17:46:13,704 INFO notifySocketTimeout:200
+
+2025-04-07 17:46:13,704 INFO isHealthCheck:true
+
+2025-04-07 17:46:13,704 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:46:13,704 INFO maxContent:10485760
+
+2025-04-07 17:46:19,633 INFO notifyConnectTimeout:100
+
+2025-04-07 17:46:19,636 INFO notifySocketTimeout:200
+
+2025-04-07 17:46:19,636 INFO isHealthCheck:true
+
+2025-04-07 17:46:19,637 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:46:19,637 INFO maxContent:10485760
+
+2025-04-07 17:46:25,348 INFO notifyConnectTimeout:100
+
+2025-04-07 17:46:25,351 INFO notifySocketTimeout:200
+
+2025-04-07 17:46:25,351 INFO isHealthCheck:true
+
+2025-04-07 17:46:25,351 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:46:25,351 INFO maxContent:10485760
+
+2025-04-07 17:49:37,693 INFO notifyConnectTimeout:100
+
+2025-04-07 17:49:37,696 INFO notifySocketTimeout:200
+
+2025-04-07 17:49:37,696 INFO isHealthCheck:true
+
+2025-04-07 17:49:37,697 INFO maxHealthCheckFailCount:12
+
+2025-04-07 17:49:37,697 INFO maxContent:10485760
+
+2025-04-07 17:49:43,105 WARN DumpService start
+
+2025-04-07 17:49:43,105 INFO start clear all config-info.
+
+2025-04-07 17:49:43,106 INFO clear all config-info success.
+
+2025-04-07 17:49:43,106 INFO clear all config-info-tenant success.
+
+2025-04-07 17:49:43,194 INFO All dump page size is set to 50 according to mem limit 8796093022207 MB
+
+2025-04-07 17:49:43,194 INFO start dump all config-info...
+
+2025-04-07 17:49:43,195 INFO success to  dump all config-info。
+
+2025-04-07 17:49:43,195 INFO start clear all config-info-beta.
+
+2025-04-07 17:49:43,195 INFO clear all config-info-beta success.
+
+2025-04-07 17:49:43,195 INFO clear all config-info-beta-tenant success.
+
+2025-04-07 17:49:43,220 INFO start clear all config-info-tag.
+
+2025-04-07 17:49:43,220 INFO clear all config-info-tag success.
+
+2025-04-07 17:49:43,220 INFO clear all config-info-tag-tenant success.
+
